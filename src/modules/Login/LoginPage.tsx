@@ -1,6 +1,6 @@
 import { AxiosError } from "axios";
 import { HttpErrorMessageUIAdapter } from "core/adapters/HttpErrorMessageAdapter";
-import { LocalStorage } from "core/LocaStorage/LocaStorage";
+import { LocalStorage } from "core/entity/LocalStorage";
 import { HttpError } from "core/types/HttpError";
 import React, { useState } from "react";
 import { useMutation } from "react-query";
@@ -51,7 +51,7 @@ export default function LoginPage() {
     mutation.mutate(authRequest);
   };
 
-  
+
   if (isAuthenticated) return <Redirect to="/" />;
   return (
     <Flex
