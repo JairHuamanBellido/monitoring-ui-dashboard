@@ -1,11 +1,14 @@
 import DashboardPage from "modules/Dashboard/DashboardPage";
 import LoginPage from "modules/Login/LoginPage";
-import { Route, Switch } from "react-router-dom";
+import { Redirect, Route, Switch } from "react-router-dom";
 
 export default function MainRouter() {
   return (
     <Switch>
-      <Route exact={true} path="/">
+      <Route exact={true} path="/" >
+        <Redirect to="/dashboard" />
+      </Route>
+      <Route path="/dashboard">
         <DashboardPage />
       </Route>
       <Route exact={true} path="/login">

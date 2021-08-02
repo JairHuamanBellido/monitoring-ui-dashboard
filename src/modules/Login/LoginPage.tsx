@@ -51,7 +51,7 @@ export default function LoginPage() {
     mutation.mutate(authRequest);
   };
 
-  if (isAuthenticated) return <Redirect to="/" />;
+  if (isAuthenticated) return <Redirect to="/dashboard" />;
   return (
     <Flex
       alignItems="center"

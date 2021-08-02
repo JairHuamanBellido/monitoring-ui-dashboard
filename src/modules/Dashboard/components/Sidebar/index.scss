@@ -1,0 +1,36 @@
+@import "abstracts/variables";
+
+.sidebar-container {
+  height: 100%;
+  width: 240px;
+  padding: 32px;
+  background: rgba(7, 9, 38, 0.12);
+  & .sidebar-menu-container{
+    margin-top: 48px;
+  }
+  & .sidebar-menu-item {
+    margin: 32px 0 !important;
+    width: 100% !important;
+    cursor: pointer;
+    & *:hover{
+      color: $sidebar-active-link !important;
+    }
+    &.active-link {
+      & * {
+        color: $sidebar-active-link;
+        fill: $sidebar-active-link !important;
+      }
+    }
+    &.inactive-link {
+      & * {
+        color: $sidebar-inactive-link;
+        fill: $sidebar-inactive-link !important;
+      }
+    }
+    & p {
+      margin-left: 12px;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+}
