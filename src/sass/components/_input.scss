@@ -1,0 +1,24 @@
+@import "abstracts/variables";
+input {
+  border: none;
+  border-bottom: 1px solid #cecece3f;
+  padding: 4px 0px 12px 0px;
+  font-weight: 400;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  font-size: 16px;
+  color: #fff;
+  background: transparent;
+}
+
+input::placeholder {
+  color: #cccccc3f;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 1px solid $main-color;
+}
