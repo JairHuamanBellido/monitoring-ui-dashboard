@@ -1,3 +1,4 @@
+import { Logo } from "assets";
 import { AxiosError } from "axios";
 import { HttpErrorMessageUIAdapter } from "core/adapters/HttpErrorMessageAdapter";
 import { LocalStorage } from "core/entity/LocalStorage";
@@ -12,8 +13,7 @@ import { HttpRestApiAdminAuthentication } from "./models/HttRestApiAdminAuthenti
 import { AdminAuthService } from "./service/AdminAuthService";
 
 export default function LoginPage() {
-
-  // Hooks 
+  // Hooks
   const [authRequest, setAuthRequest] =
     useState<HttpRestApiAdminAuthentication>({
       password: "",
@@ -23,7 +23,7 @@ export default function LoginPage() {
 
   const [isAuthenticated, setIsAuthenticated] = useState<boolean>(false);
 
-  // REACT QUERY 
+  // REACT QUERY
   const mutation = useMutation(
     (payload: HttpRestApiAdminAuthentication) =>
       AdminAuthService.login(payload),
@@ -51,7 +51,6 @@ export default function LoginPage() {
     mutation.mutate(authRequest);
   };
 
-
   if (isAuthenticated) return <Redirect to="/" />;
   return (
     <Flex
@@ -59,9 +58,22 @@ export default function LoginPage() {
       justifyContent="center"
       width="100%"
       height="100vh"
+      
       className="LoginPageContainer"
     >
-      <Flex direction="column">
+      <Flex margin="-128px 0px 0px 0px" direction="column">
+        <Flex
+          margin="0px 0px 64px 0px"
+          width="100%"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <img src={Logo} alt="logo" />
+          <Flex margin="0px 0px 0px 16px" direction="column">
+            <h1 className="header-title">OXC</h1>
+            <p className="header-desc">Control & Management</p>
+          </Flex>
+        </Flex>
         <form onSubmit={onSubmit}>
           <Flex className="field" direction="column">
             <label htmlFor="username">Usuario</label>
