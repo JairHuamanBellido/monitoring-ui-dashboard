@@ -1,0 +1,17 @@
+@import "abstracts/variables";
+.header-label-container {
+    margin-right: 128px;
+  & * {
+    font-family: $font-exo-family;
+  }
+  & .value {
+    color: $seconday-color;
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  & .label {
+    color: #fff;
+    font-weight: 300;
+    opacity: 0.8;
+  }
+}

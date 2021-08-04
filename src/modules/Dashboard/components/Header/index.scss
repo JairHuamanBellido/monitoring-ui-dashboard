@@ -1,0 +1,19 @@
+.headerbar-container {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+  & img {
+    width: 36px;
+    height: 36px;
+    margin-right: 12px;
+    border-radius: 36px;
+    -webkit-border-radius: 36px;
+    -moz-border-radius: 36px;
+    -ms-border-radius: 36px;
+    -o-border-radius: 36px;
+  }
+  & .name {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+  }
+}

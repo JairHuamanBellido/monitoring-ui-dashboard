@@ -5,5 +5,14 @@ import PulseLoader from "./Loader/PulseLoader";
 import IconDashboard from "./Icons/IconDashboard";
 import IconUser from "./Icons/IconUsers";
 import IconConfiguration from "./Icons/IconConfiguration";
-
-export { Input, Button, Flex, PulseLoader, IconDashboard, IconUser, IconConfiguration };
+import HeaderSectionDashboard from "./HeaderSectionDashboard/HeaderSectionDashboard";
+export {
+  Input,
+  Button,
+  Flex,
+  PulseLoader,
+  IconDashboard,
+  IconUser,
+  IconConfiguration,
+  HeaderSectionDashboard,
+};

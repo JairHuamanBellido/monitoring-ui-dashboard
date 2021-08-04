@@ -1,7 +1,9 @@
+import { HeaderSectionDashboard } from "shared";
+
 export default function UsersPage() {
   return (
     <div>
-      <h1>Hola soy el users</h1>
+        <HeaderSectionDashboard title="Usuarios" description="Gestión y control de usuarios" />
     </div>
   );
 }

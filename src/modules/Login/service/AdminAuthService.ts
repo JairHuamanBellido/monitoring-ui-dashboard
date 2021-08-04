@@ -1,4 +1,4 @@
-import HttpRestApi from "core/api/HttRestApi";
+import { HttpRestApi } from "core/api/HttRestApi";
 import { HttpRestApiAdminAuthenticationResponse } from "../models/HttpRestApiAdminAuthenticationResponse";
 import { HttpRestApiAdminAuthentication } from "../models/HttRestApiAdminAuthentication";
 

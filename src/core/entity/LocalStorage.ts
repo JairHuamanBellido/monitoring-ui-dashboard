@@ -1,4 +1,4 @@
-import { Nulleable } from "core/types/Nulleable";
+import { Nulleable } from "core/types/CommonTypes";
 
 export class LocalStorage {
   public static readonly id: Nulleable<string> = localStorage.getItem("id");
