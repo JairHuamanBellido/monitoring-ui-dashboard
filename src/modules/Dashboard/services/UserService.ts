@@ -10,7 +10,7 @@ export class UserService {
   }
   
   public static async GetAllUsers(): Promise<User[]> {
-    const { data } = await HttRestApiWithInterceptor.get<User[]>(`${this.basePath}/by-admin`);
+    const { data } = await HttRestApiWithInterceptor.get<User[]>(`${this.basePath}/for-admin`);
     return data;
   }
 

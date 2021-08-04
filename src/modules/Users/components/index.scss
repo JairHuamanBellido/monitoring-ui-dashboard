@@ -1,0 +1,79 @@
+@import "abstracts/variables";
+.users-table-container {
+  display: inline-table;
+  border-collapse: collapse;
+  width: 100%;
+  & tr td,
+  & tr th {
+    padding: 12px;
+    text-align: left;
+  }
+  & tbody tr:hover {
+      background: #1D284D;
+      cursor: pointer;
+  }
+  & tr td {
+    color: #fff;
+    font-size: 16px;
+    font-family: $font-exo-family;
+    font-weight: 300;
+  }
+  & thead tr th {
+    color: #a5bbff;
+    font-weight: 500;
+    font-size: 12px;
+  }
+  & .avatar {
+      & img{
+          width: 32px;
+          height: 32px;
+          border-radius: 4px;
+          -webkit-border-radius: 4px;
+          -moz-border-radius: 4px;
+          -ms-border-radius: 4px;
+          -o-border-radius: 4px;
+          margin-right: 24px;
+}
+  }
+  & .row-isActive {
+    padding: 8px 24px !important ;
+
+    & > div {
+      width: 9px;
+      height: 9px;
+      border-radius: 9px;
+      -webkit-border-radius: 9px;
+      -moz-border-radius: 9px;
+      -ms-border-radius: 9px;
+      -o-border-radius: 9px;
+    }
+    & p {
+      margin-left: 16px;
+      color: #fff;
+      font-family: $font-exo-family;
+    }
+
+    &.active {
+        background: rgba(0, 255, 209,0.03);
+
+      & .circle {
+        background: $active-indicator-platform-color;
+        box-shadow: 0 0 12px $active-indicator-platform-color;
+      }
+      & p {
+        color: $active-indicator-platform-color;
+        text-shadow: 0 0 12px $active-indicator-platform-color;
+      }
+    }
+    &.inactive {
+        background: rgba(0, 0, 0,0.1);
+
+      & .circle {
+        background: $inactive-indicator-platform-color;
+      }
+      & p {
+        color: $inactive-indicator-platform-color;
+      }
+    }
+  }
+}
