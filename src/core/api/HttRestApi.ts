@@ -1,5 +1,5 @@
 import axios, { AxiosRequestConfig } from "axios";
-import { LocalStorage } from "core/entity/LocalStorage";
+import { LocalStorageAdapter } from "core/adapters/LocalStorageAdapter";
 
 const API_REST_ENDPOINT_BASE = "http://localhost:3001";
 const HttpRestApi = axios.create({
@@ -12,7 +12,7 @@ const HttRestApiWithInterceptor = axios.create({
 
 HttRestApiWithInterceptor.interceptors.request.use(
   (request: AxiosRequestConfig) => {
-    request.headers.Authorization = `Bearer ${LocalStorage.token}`;
+    request.headers.Authorization = `Bearer ${LocalStorageAdapter.token}`;
     return request;
   }
 );

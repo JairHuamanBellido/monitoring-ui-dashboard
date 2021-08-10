@@ -6,6 +6,8 @@ import IconDashboard from "./Icons/IconDashboard";
 import IconUser from "./Icons/IconUsers";
 import IconConfiguration from "./Icons/IconConfiguration";
 import HeaderSectionDashboard from "./HeaderSectionDashboard/HeaderSectionDashboard";
+import ContainerError from "./ContainerError/ContainerError";
+
 export {
   Input,
   Button,
@@ -15,4 +17,5 @@ export {
   IconUser,
   IconConfiguration,
   HeaderSectionDashboard,
+  ContainerError
 };

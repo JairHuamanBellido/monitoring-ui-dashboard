@@ -1,6 +1,6 @@
-import ConfigurationPage from "modules/Configuration/ConfigurationPage";
-import OverviewPage from "modules/Overview/OverviewPage";
-import UsersPage from "modules/Users/UserPage";
+import ConfigurationPage from "modules/Dashboard/application/modules/Configuration/ConfigurationPage";
+import OverviewPage from "modules/Dashboard/application/modules/Overview/OverviewPage";
+import UsersPage from "modules/Dashboard/application/modules/Users/UserPage";
 import { Redirect, Route, Switch, useRouteMatch } from "react-router-dom";
 
 export default function DashboardRouter() {

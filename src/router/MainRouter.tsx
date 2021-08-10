@@ -1,5 +1,5 @@
-import DashboardPage from "modules/Dashboard/DashboardPage";
-import LoginPage from "modules/Login/LoginPage";
+import DashboardPage from "modules/Dashboard/application/DashboardPage";
+import LoginPage from "modules/Login/application/LoginPage";
 import { Redirect, Route, Switch } from "react-router-dom";
 
 export default function MainRouter() {
