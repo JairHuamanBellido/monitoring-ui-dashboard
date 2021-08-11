@@ -1,8 +1,7 @@
 @import "abstracts/variables";
 .users-table-container {
-  display: inline-table;
   border-collapse: collapse;
-  width: 100%;
+  width: 80%;
   & tr td,
   & tr th {
     padding: 12px;
