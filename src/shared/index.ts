@@ -7,7 +7,8 @@ import IconUser from "./Icons/IconUsers";
 import IconConfiguration from "./Icons/IconConfiguration";
 import HeaderSectionDashboard from "./HeaderSectionDashboard/HeaderSectionDashboard";
 import ContainerError from "./ContainerError/ContainerError";
-
+import ToggleButton from "./ToggleButton/ToggleButton";
+import useSocket from "./hooks/useSocket";
 export {
   Input,
   Button,
@@ -17,5 +18,7 @@ export {
   IconUser,
   IconConfiguration,
   HeaderSectionDashboard,
-  ContainerError
+  ContainerError,
+  ToggleButton,
+  useSocket
 };
