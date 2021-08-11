@@ -3,7 +3,7 @@ import { BrowserRouter as Router } from "react-router-dom";
 import MainRouter from "router/MainRouter";
 import "./sass/App.scss";
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient({defaultOptions: {queries:{refetchOnWindowFocus: false}}});
 
 function App() {
   return (
