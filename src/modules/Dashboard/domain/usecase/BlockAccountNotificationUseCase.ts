@@ -2,7 +2,7 @@ import { WebSocketAdminAdapter } from "modules/Dashboard/infrastructure/WebSocke
 import { Socket } from "socket.io-client";
 import { BlockAccountPort } from "../port/BlockAccountPort";
 
-export class BlockAccountUseCase {
+export class BlockAccountNotificationUseCase {
   public static execute(socket: Socket, userId: number): void {
     const port: BlockAccountPort = {
       event: "blockAccount",

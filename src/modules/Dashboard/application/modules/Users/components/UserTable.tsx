@@ -4,7 +4,7 @@ import "./index.scss";
 
 interface IProps {
   users: User[];
-  toggle(id: number): void;
+  toggle(user:User): void;
 }
 export default function UsersTable(props: IProps) {
   return (
@@ -25,7 +25,7 @@ export default function UsersTable(props: IProps) {
             <td>
               <ToggleButton
                 onChange={() => {
-                  props.toggle(e.id);
+                  props.toggle(e);
                 }}
                 isActive={e.account.isBlocked}
               />

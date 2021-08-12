@@ -8,9 +8,6 @@ export default function DashboardRouter() {
 
   return (
     <Switch>
-      <Route exact={true} path={path}>
-        <Redirect to={`${path}/overview`} />
-      </Route>
       <Route path={`${path}/overview`}>
         <OverviewPage />
       </Route>
@@ -19,6 +16,9 @@ export default function DashboardRouter() {
       </Route>
       <Route path={`${path}/configuration`}>
         <ConfigurationPage />
+      </Route>
+      <Route exact={true} path={path}>
+        <Redirect to={`${path}/overview`} />
       </Route>
     </Switch>
   );

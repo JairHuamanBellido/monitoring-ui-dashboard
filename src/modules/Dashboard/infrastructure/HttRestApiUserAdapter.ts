@@ -11,4 +11,8 @@ export class HttpRestApiUserAdapter {
     const { data } = await HttRestApiWithInterceptor.get<User[]>(`users/for-admin`);
     return data;
   }
+
+  public static async updateAccountStatus(accountId:number): Promise<void>{
+    await HttRestApiWithInterceptor.patch(`users/account-status/${accountId}`)
+  }
 }
