@@ -1,0 +1,46 @@
+.user-detail-container {
+  color: #fff;
+  & .avatar {
+    margin-right: 24px;
+    & img {
+      width: 64px;
+      height: 64px;
+      border-radius: 64px;
+      -webkit-border-radius: 64px;
+      -moz-border-radius: 64px;
+      -ms-border-radius: 64px;
+      -o-border-radius: 64px;
+    }
+  }
+
+  & .nav-link-container {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    & p {
+      padding: 12px 24px;
+      cursor: pointer;
+      &.active {
+          opacity: 1;
+      }
+
+      &.inactive {
+        opacity: .5;
+      }
+      &:hover {
+        background: rgba(255, 255, 255, 0.05);
+      }
+    }
+  }
+
+  & .information-container{
+    & .field{ 
+      margin: 24px 0px;
+      & .label {
+        opacity: 0.7;
+        margin-bottom: 4px;
+      }
+      & .value{
+        font-size: 16px;
+      }
+    }
+  }
+}

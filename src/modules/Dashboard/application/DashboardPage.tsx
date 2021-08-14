@@ -13,6 +13,9 @@ export default function DashboardPage() {
   useEffect(() => {
     if(socket !== undefined) {
       JoinAdminRoomUseCase.execute(socket)
+      // socket.on('notify-admin', (e) => {
+      //   console.log(`${e} se unio`)
+      // })
     }
   }, [socket]);
 

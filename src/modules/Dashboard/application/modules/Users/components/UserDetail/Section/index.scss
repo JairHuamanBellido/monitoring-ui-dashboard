@@ -1,0 +1,12 @@
+.user-detail-section {
+  & .field {
+    margin: 24px 0px;
+    & .label {
+      opacity: 0.7;
+      margin-bottom: 4px;
+    }
+    & .value {
+      font-size: 16px;
+    }
+  }
+}

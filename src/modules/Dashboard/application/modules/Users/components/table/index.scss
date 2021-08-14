@@ -1,38 +1,38 @@
 @import "abstracts/variables";
 .users-table-container {
   border-collapse: collapse;
-  width: 80%;
+  width: 100%;
   & tr td,
   & tr th {
     padding: 12px;
     text-align: left;
   }
   & tbody tr:hover {
-      background: #1D284D;
-      cursor: pointer;
+    background: #1d284d;
   }
-  & tr td {
+  & tr td, & tr td a {
     color: #fff;
     font-size: 16px;
     font-family: $font-exo-family;
     font-weight: 300;
   }
+  
   & thead tr th {
     color: #a5bbff;
     font-weight: 500;
     font-size: 12px;
   }
   & .avatar {
-      & img{
-          width: 32px;
-          height: 32px;
-          border-radius: 4px;
-          -webkit-border-radius: 4px;
-          -moz-border-radius: 4px;
-          -ms-border-radius: 4px;
-          -o-border-radius: 4px;
-          margin-right: 24px;
-}
+    & img {
+      width: 32px;
+      height: 32px;
+      border-radius: 4px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      -o-border-radius: 4px;
+      margin-right: 24px;
+    }
   }
   & .row-isActive {
     padding: 8px 24px !important ;
@@ -53,7 +53,7 @@
     }
 
     &.active {
-        background: rgba(0, 255, 209,0.03);
+      background: rgba(0, 255, 209, 0.03);
 
       & .circle {
         background: $active-indicator-platform-color;
@@ -65,7 +65,7 @@
       }
     }
     &.inactive {
-        background: rgba(0, 0, 0,0.1);
+      background: rgba(0, 0, 0, 0.1);
 
       & .circle {
         background: $inactive-indicator-platform-color;

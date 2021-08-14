@@ -15,4 +15,9 @@ export class HttpRestApiUserAdapter {
   public static async updateAccountStatus(accountId:number): Promise<void>{
     await HttRestApiWithInterceptor.patch(`users/account-status/${accountId}`)
   }
+
+  public static async getUserByDni(dni: string): Promise<User>{
+    const { data } = await HttRestApiWithInterceptor.get<User>(`users/${dni}`)
+    return data;
+  }
 }

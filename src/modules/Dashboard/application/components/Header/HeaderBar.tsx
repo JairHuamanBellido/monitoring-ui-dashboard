@@ -1,5 +1,5 @@
 import { User } from "modules/Dashboard/domain/entity/User";
-import { GetPersonalInformationUseCase } from "modules/Dashboard/domain/usecase/GetPersonalInformationUseCase";
+import { GetPersonalInformationUseCase } from "modules/Dashboard/domain/usecase/user/GetPersonalInformationUseCase";
 import { useQuery } from "react-query";
 import { Flex } from "shared";
 import "./index.scss";

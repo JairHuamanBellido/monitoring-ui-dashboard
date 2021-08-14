@@ -1,11 +1,10 @@
 import { WebSocketAdminAdapter } from "modules/Dashboard/infrastructure/WebSocketAdminAdapter";
 import { Socket } from "socket.io-client";
-import { BlockAccountPort } from "../port/BlockAccountPort";
+import { SocketPayloadPort } from "../port/SocketPayloadPort";
 
 export class BlockAccountNotificationUseCase {
   public static execute(socket: Socket, userId: number): void {
-    const port: BlockAccountPort = {
-      event: "blockAccount",
+    const port: SocketPayloadPort<string> = {
       payload: userId.toString(),
       socket: socket,
     };

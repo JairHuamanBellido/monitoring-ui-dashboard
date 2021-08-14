@@ -1,5 +1,5 @@
 import { User } from "modules/Dashboard/domain/entity/User";
-import { GetUsersUseCase } from "modules/Dashboard/domain/usecase/GetUsersUseCase";
+import { GetUsersUseCase } from "modules/Dashboard/domain/usecase/user/GetUsersUseCase";
 import { useQuery } from "react-query";
 import { Flex, HeaderSectionDashboard } from "shared";
 import HeaderLabel from "./HeaderLabel/HeaderLabel";
